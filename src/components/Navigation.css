@@ -1,0 +1,54 @@
+.navigation {
+  background: linear-gradient(135deg, #b3cdd1, #9ab8ca);
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.list-heading {
+  color: #243447;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.navigation-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-link {
+  color: #334756;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 15px 0;
+  display: inline-flex; /* Ensure icon and text are in the same line */
+  align-items: center; /* Align items vertically */
+  gap: 10px; /* Add gap between icon and text */
+  padding: 5px;
+  transition: transform 0.3s ease, color 0.3s ease; /* Add transition for smooth effect */
+}
+
+.nav-link:hover {
+  color: #00bcd4;
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+/* Adjust the icon size */
+.nav-link svg {
+  width: 1.5em; /* Responsive icon size */
+  height: 1.5em;
+}
+
+/* New hover effect for icons */
+.nav-link:hover svg {
+  transform: rotate(180deg); /* Rotate icon on hover */
+}
